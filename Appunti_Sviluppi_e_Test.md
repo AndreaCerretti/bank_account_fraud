@@ -89,51 +89,65 @@ month
 
 
 - TEST 1
-Allenamento con RandomForestClassifier e test su Base senza modifiche con rapporto 75-25
+    Allenamento con RandomForestClassifier e test su Base senza modifiche con rapporto 75-25
 
-Accuratezza : 0.989072
-Precisione 0.75
-Matrice di confusione:[[247259    3] [2729       9]]
+    Accuratezza : 0.989072
+    Precisione 0.75
+    Matrice di confusione:[[247259    3] [2729       9]]
 
 
 - TEST 2
 Allenamento con RandomForestClassifier e test su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 5 (rimozione di un po' di non frodi)
 
-Accuratezza: 0.9786025145067698
-Precisione: 0.9995803608896349
-Matrice di confusione:[[13808     1] [  353  2382]]
+    Accuratezza: 0.9786025145067698
+    Precisione: 0.9995803608896349
+    Matrice di confusione:[[13808     1] [  353  2382]]
 
 
 - TEST 3
-Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 5 (rimozione di un po' di non frodi)
-Test finale su tutte le Varianti e la Base non modificate in alcun modo
+    Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 5 (rimozione di un po' di non frodi)
+    Test finale su tutte le Varianti e la Base non modificate in alcun modo
 
-Non è andato bene, overfitting su troppi pochi casi negativi
+    Non è andato bene, overfitting su troppi pochi casi negativi
 
 
 
 
 - TEST 4
-Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 10 (rimozione di un po' di non frodi)
-Test finale su tutte le Varianti e la Base non modificate in alcun modo
+    Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 10 (rimozione di un po' di non frodi)
+    Test finale su tutte le Varianti e la Base non modificate in alcun modo
 
-Non è andato bene, overfitting su troppi pochi casi negativi
+    Non è andato bene, overfitting su troppi pochi casi negativi
 
 
 
 - TEST 5
-Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 50 (rimozione di un po' di non frodi)
-Test finale su tutte le Varianti e la Base non modificate in alcun modo
+    Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 50 (rimozione di un po' di non frodi)
+    Test finale su tutte le Varianti e la Base non modificate in alcun modo
 
-Andato meglio rispetto a 3 e 4 nella matrice di confusione(meno falsi positivi), ma comunque overfitting (percentuale precisione troppo bassa)
+    Andato meglio rispetto a 3 e 4 nella matrice di confusione(meno falsi positivi), ma comunque overfitting (percentuale precisione troppo bassa)
 
 
 
 
 
 - TEST 6
-Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 100 (rimozione di un po' di non frodi)
-Test finale su tutte le Varianti e la Base non modificate in alcun modo
+    Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 100 (rimozione di un po' di non frodi)
+    Test finale su tutte le Varianti e la Base non modificate in alcun modo
 
-Ci sono pochi falsi positivi, però ci sono troppi falsi negativi
+    Ci sono pochi falsi positivi, però ci sono troppi falsi negativi
+
+
+
+- TEST 7 (Base di partenza)
+    Allenamento con RandomForestClassifier e test del modello su Base con rapporto 75-25, con un rapporto frodi non frodi 1 a 50 (rimozione di un po' di non frodi)
+    Test su Base con metriche definitive
+
+    Accuratezza: 0.9827762764898308
+    Precisione: 0.811284046692607
+    Recall: 0.15207877461706784
+    FPR: 0.8479212253829321
+    Matrice di confusione:
+    [[137781     97]
+    [  2325    417]]
 
