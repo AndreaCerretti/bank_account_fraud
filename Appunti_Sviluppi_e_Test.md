@@ -80,8 +80,36 @@ month
 
 
 
+# Aiuto di Cristian
+
+Quali sono i campi che ti permettono di riconoscere una frode da una non frode?
+Andare ad estrarre le colonne che servono per fare la classificazione utilizzando il metodo information gain, anoba e geeny(o entropia).
+
+Ridurle tramite PCA ed estrarre le colonne importanti tramite le metodologie sopra elencate
+
+Vedi se serve ridurre le non frodi fino al numero delle frodi.
+Alle random forest non importa perchè non overfittano mai 
+
+per addestrare prova a vedere la cross validation (anche stastificato, mantenendo la struttura).
+Fa dei macro gruppi mantenendo le proporzioni tra frodi e non frodi
 
 
+XGboost al posto di RandomForest? Ci assomiglia
+
+
+
+Quello che ha fatto lui
+- Ridurre numero colonne
+- Preso i dati e li hanno divisi 80% di training e test. Una volta addestrato si fa il test finale sul restante 20%
+
+
+Per la evaluation finale utilizzare lo score F1:
+https://it.wikipedia.org/wiki/F1_score
+
+
+Altre link utili:
+https://keras.io/examples/structured_data/imbalanced_classification/
+https://machinelearningmastery.com/imbalanced-classification-with-the-fraudulent-credit-card-transactions-dataset/
 
 
 
@@ -150,4 +178,5 @@ Allenamento con RandomForestClassifier e test su Base con rapporto 75-25, con un
     Matrice di confusione:
     [[137781     97]
     [  2325    417]]
+
 
