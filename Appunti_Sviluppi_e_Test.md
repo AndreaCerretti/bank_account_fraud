@@ -110,7 +110,7 @@ https://it.wikipedia.org/wiki/F1_score
 Altre link utili:
 https://keras.io/examples/structured_data/imbalanced_classification/
 https://machinelearningmastery.com/imbalanced-classification-with-the-fraudulent-credit-card-transactions-dataset/
-
+https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks
 
 
 # TEST
