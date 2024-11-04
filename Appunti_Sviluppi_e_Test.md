@@ -19,6 +19,9 @@ Frodi:11029
 1,102 %
 
 
+https://www.kaggle.com/code/matthewmcnulty/bank-account-fraud
+
+
 
 
 # POTENZIALI DOMANDE
