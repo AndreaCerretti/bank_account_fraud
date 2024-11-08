@@ -87,7 +87,7 @@ features = df_rapp.drop(['fraud_bool'], axis=1)
 targets = df_rapp['fraud_bool']
 
 # Split train e test 80-20
-X_train, X_test, y_train, y_test = train_test_split(features, targets, random_state=0, test_size=0.20)
+X_train, X_test, y_train, y_test = train_test_split(features, targets, random_state=0)
 
 # Scaling dei dataset contenenti le feature di train e test
 sc = RobustScaler()
@@ -105,13 +105,16 @@ model = train_and_test(classifier, X_train, y_train, X_test, y_test)
 
 ## Risultato finale
 
-- Accuratezza: 0.9858555705896302
-- Precisione: 0.986562150055991
-- Recall: 0.6402616279069767
-- FPR: 0.3597383720930233
+
+- Accuratezza: 0.9858974180139213
+- Precisione: 0.9876750700280112
+- Recall: 0.640625
+- FPR: 0.359375
 - Matrice di confusione:
 
-$\begin{bmatrix}68913 & 24\\990 & 1762 \end{bmatrix}$
+$\begin{bmatrix}68915 & 22\\989 & 1763 \end{bmatrix}$
+
+
 
 
 
@@ -147,6 +150,7 @@ $\begin{bmatrix}68937 & 0\\1000 & 1752 \end{bmatrix}$
 - Recall: 0.5319767441860465
 - FPR: 0.46802325581395354
 - Matrice di confusione:
+
 $\begin{bmatrix}68835 & 102\\1288 & 1464 \end{bmatrix}$
 
 
